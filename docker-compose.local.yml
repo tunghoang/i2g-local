@@ -27,12 +27,12 @@ services:
     networks:
       - i2g
   wi_auth:
-    image: hoangthanh751996/wi-auth:latest
+    image: hoangi2g751996/wi-auth:latest
     restart: always
     container_name: wi_auth
     environment:
       AUTH_DBNAME: "wi_auth"
-      AUTH_DBUSER: "thanh"
+      AUTH_DBUSER: "i2g"
       AUTH_DBPASSWORD: "qwertyuiop"
       AUTH_DBHOST: wi_mysql
       AUTH_DBDIALECT: "mysql"
@@ -51,16 +51,16 @@ services:
     restart: always
     environment:
       INVENTORY_DBNAME: "inventory"
-      INVENTORY_DBUSER: "thanh"
+      INVENTORY_DBUSER: "i2g"
       INVENTORY_DBPASSWORD: "qwertyuiop"
       INVENTORY_DBHOST: wi_mysql
       INVENTORY_DIALECT: "mysql"
       INVENTORY_DBPORT: "3306"
       NODE_ENV: "production"
-      INVENTORY_ACCESS_KEY_ID: "AKIA3PCPNILJKLDENWGZ"
-      INVENTORY_SECRET_ACCESS_KEY: "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"
-      INVENTORY_S3BUCKET: "wi-thanh-inventory"
-      INVENTORY_S3PATH: "https://s3-ap-southeast-1.amazonaws.com/wi-thanh-inventory"
+      INVENTORY_ACCESS_KEY_ID: ""
+      INVENTORY_SECRET_ACCESS_KEY: ""
+      INVENTORY_S3BUCKET: ""
+      INVENTORY_S3PATH: ""
     ports:
       - "3002:80"
     expose:
@@ -77,10 +77,10 @@ services:
     restart: always
     environment:
       NODE_ENV: "production"
-      STORAGE_ACCESS_KEY: "AKIA3PCPNILJKLDENWGZ"
-      STORAGE_SECRET_KEY: "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"
+      STORAGE_ACCESS_KEY: ""
+      STORAGE_SECRET_KEY: ""
       STORAGE_S3: "true"
-      STORAGE_BUCKET: "wi-thanh-inventory"
+      STORAGE_BUCKET: ""
       STORAGE_MAXSIZE_TEXT: "100"
     ports:
       - "3001:3001"
@@ -99,7 +99,7 @@ services:
     environment:
       NODE_ENV: "production"
       BACKEND_DBNAME: "wi_backend"
-      BACKEND_DBUSER: "thanh"
+      BACKEND_DBUSER: "i2g"
       BACKEND_DBPASSWORD: "qwertyuiop"
       BACKEND_DBHOST: wi_mysql
       BACKEND_DBDIALECT: "mysql"

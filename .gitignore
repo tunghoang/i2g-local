@@ -8,3 +8,4 @@ mysql/*
 uploads/*
 wi-images/*
 wi-logs/*
+docker-compose.local.yml
