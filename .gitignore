@@ -1,0 +1,10 @@
+node_modules
+package-local.json
+.idea
+curve-data
+exports
+file-browser
+mysql
+uploads
+wi-images
+wi-logs
