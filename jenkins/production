@@ -4,20 +4,21 @@ pipeline {
     }
 
     stages {
-        stage("Rsync Production") {
-                steps {
-                    sh 'rsync --delete -azvv ./ --rsync-path="rsync" kubectl:/tmp/i2g-local'
-                }
-        }
         stage('Install Dependencies') {
             steps {
-                sh 'ssh kubectl "cd /tmp/i2g-local && npm install"'
+                sh 'npm install"'
+            }
+        }
+        stage("Rsync Production") {
+            steps {
+                sh 'rsync --delete -azvv ./ --rsync-path="rsync" kubectl:/tmp/i2g-local'
             }
         }
 
+
         stage('Build and push docker image') {
             steps {
-                sh 'ssh kubectl "npm run build"'
+                sh 'ssh kubectl "cd /tmp/ig2-local && npm run build"'
             }
         }
     }
