@@ -3,13 +3,12 @@ pipeline {
         label 'master'
     }
 
-    stage("Rsync Production") {
-            steps {
-                sh 'rsync --delete -azvv ./ --rsync-path="rsync" kubectl:/tmp/i2g-local'
-            }
-        }
-
     stages {
+        stage("Rsync Production") {
+                steps {
+                    sh 'rsync --delete -azvv ./ --rsync-path="rsync" kubectl:/tmp/i2g-local'
+                }
+        }
         stage('Install Dependencies') {
             steps {
                 sh 'ssh kubectl "cd /tmp/i2g-local && npm install"'
