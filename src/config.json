@@ -1,0 +1,20 @@
+{
+  "repos": [
+    {
+      "name": "wi-auth",
+      "url": "https://github.com/tunghoang/wi-auth.git"
+    },
+    {
+      "name": "wi-backend",
+      "url": "https://github.com/tunghoang/wi-backend.git"
+    },
+    {
+      "name": "wi-online-inventory",
+      "url": "https://github.com/tunghoang/wi-online-inventory.git"
+    },
+    {
+      "name": "wi-angular",
+      "url": "https://github.com/tunghoang/wi-angular.git"
+    }
+  ]
+}

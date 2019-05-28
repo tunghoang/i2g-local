@@ -9,3 +9,4 @@ uploads/*
 wi-images/*
 wi-logs/*
 docker-compose.local.yml
+package-lock.json

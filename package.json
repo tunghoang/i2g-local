@@ -1,0 +1,25 @@
+{
+  "name": "i2g-local",
+  "version": "1.0.0",
+  "description": "*** \tWell Insight Project * Run ``` /bin/bash run.sh ```  ### API   http://api-docs.i2g.cloud   http://js-docs.i2g.cloud",
+  "main": "index.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node src/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunghoang/i2g-local.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tunghoang/i2g-local/issues"
+  },
+  "homepage": "https://github.com/tunghoang/i2g-local#readme"
+}
