@@ -6,13 +6,13 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                sh 'npm install"'
+                sh 'npm install'
             }
         }
 
         stage('Build and push docker image') {
             steps {
-                sh 'npm run build"'
+                sh 'npm run build'
             }
         }
     }
