@@ -11,10 +11,6 @@
     {
       "name": "wi-online-inventory",
       "url": "https://github.com/tunghoang/wi-online-inventory.git"
-    },
-    {
-      "name": "wi-angular",
-      "url": "https://github.com/tunghoang/wi-angular.git"
     }
   ]
 }
