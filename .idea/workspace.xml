@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e47142ac-5d9f-43d9-a8ef-ce0fa60f1039" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/build-docker-images-ssh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jenkins/production" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/production" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build-docker-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/build-docker-images.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,29 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/build-docker-images.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+            <state relative-caret-position="594">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/build-docker-images-ssh.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="27" column="92" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jenkins/production">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="87" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="87" />
+            <state relative-caret-position="294">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -91,8 +79,8 @@
         <option value="$PROJECT_DIR$/src/run.js" />
         <option value="$PROJECT_DIR$/src/build-image.sh" />
         <option value="$PROJECT_DIR$/src/config.json" />
-        <option value="$PROJECT_DIR$/jenkins/production" />
         <option value="$PROJECT_DIR$/src/build-docker-images.js" />
+        <option value="$PROJECT_DIR$/jenkins/production" />
       </list>
     </option>
   </component>
@@ -173,18 +161,18 @@
       <workItem from="1558410944549" duration="14712000" />
       <workItem from="1558491903945" duration="1346000" />
       <workItem from="1558507673696" duration="10926000" />
-      <workItem from="1559017817834" duration="9475000" />
+      <workItem from="1559017817834" duration="9630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43873000" />
+    <option name="totallyTimeSpent" value="44028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1600" height="904" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984147" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24984147" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -289,13 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/production">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="87" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/build-docker-images-ssh.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -305,8 +286,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/build-docker-images.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+        <state relative-caret-position="594">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/production">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
