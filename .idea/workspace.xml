@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e47142ac-5d9f-43d9-a8ef-ce0fa60f1039" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/jenkins/production" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build-docker-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/build-docker-images.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,16 +27,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/build-docker-images.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="510">
+              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jenkins/production">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
@@ -79,8 +79,8 @@
         <option value="$PROJECT_DIR$/src/run.js" />
         <option value="$PROJECT_DIR$/src/build-image.sh" />
         <option value="$PROJECT_DIR$/src/config.json" />
-        <option value="$PROJECT_DIR$/src/build-docker-images.js" />
         <option value="$PROJECT_DIR$/jenkins/production" />
+        <option value="$PROJECT_DIR$/src/build-docker-images.js" />
       </list>
     </option>
   </component>
@@ -161,12 +161,12 @@
       <workItem from="1558410944549" duration="14712000" />
       <workItem from="1558491903945" duration="1346000" />
       <workItem from="1558507673696" duration="10926000" />
-      <workItem from="1559017817834" duration="9714000" />
+      <workItem from="1559017817834" duration="10133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44112000" />
+    <option name="totallyTimeSpent" value="44531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1600" height="904" extended-state="6" />
@@ -184,7 +184,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.5907384" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5907384" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -284,17 +284,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/build-docker-images.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jenkins/production">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/build-docker-images.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
