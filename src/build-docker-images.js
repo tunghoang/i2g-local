@@ -21,12 +21,14 @@ function execShellCommand(cmd, options) {
 
 const run = async () => {
    try {
+      await execShellCommand(`mkdir output`);
       await Promise.all(repos.map(async repo => {
          await execShellCommand(`git clone -b local-service ${repo.url}`, {cwd: "./output"});
          await execShellCommand(`cp build-image.sh ../output/${repo.name}`, {cwd: "./src"});
          await execShellCommand(`/bin/bash build-image.sh ${REGISTRY_URL}/${repo.name}:local`, {cwd: `./output/${repo.name}`});
          await execShellCommand(`rm -fr ${repo.name}`, {cwd: `./output`});
       }));
+      await execShellCommand(`rm -fr output`);
    } catch (e) {
       console.error(e);
    }
