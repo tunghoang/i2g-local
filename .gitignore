@@ -1,6 +1,6 @@
 node_modules
 package-local.json
-.idea
+.idea/
 curve-data/*
 exports/*
 file-browser/*
