@@ -11,6 +11,10 @@
     {
       "name": "wi-online-inventory",
       "url": "https://github.com/tunghoang/wi-online-inventory.git"
+    },
+    {
+      "name": "wi-python-backend",
+      "url": "https://github.com/tunghoang/wi-python-backend.git"
     }
   ]
 }
