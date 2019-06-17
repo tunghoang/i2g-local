@@ -15,6 +15,10 @@
     {
       "name": "wi-python-backend",
       "url": "https://github.com/tunghoang/wi-python-backend.git"
+    },
+    {
+      "name": "wi-proxy",
+      "url": "https://github.com/hoangthanh751996/wi-proxy.git"
     }
   ]
 }
