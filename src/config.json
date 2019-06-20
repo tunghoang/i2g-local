@@ -19,6 +19,10 @@
     {
       "name": "wi-proxy",
       "url": "https://github.com/hoangthanh751996/wi-proxy.git"
+    },
+    {
+      "name": "wi-csv-transformer",
+      "url": "https://github.com/phucnv282/csv-transformer.git"
     }
   ]
 }
