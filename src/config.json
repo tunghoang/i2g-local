@@ -23,6 +23,18 @@
     {
       "name": "csv-transformer",
       "url": "https://github.com/phucnv282/csv-transformer.git"
+    },
+    {
+      "name": "wi-angular",
+      "url": "https://github.com/tunghoang/wi-angular.git"
+    },
+    {
+      "name": "wi-python-frontend",
+      "url": "https://github.com/tunghoang/wi-python-frontend.git"
+    },
+    {
+      "name": "base-map",
+      "url": "https://github.com/tunghoang/base-map.git"
     }
   ]
 }

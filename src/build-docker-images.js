@@ -25,8 +25,18 @@ const run = async () => {
       await execShellCommand(`ssh kubectl "rm -fr /tmp/i2g-local/*"`);
       await execShellCommand(`mkdir output`);
       await Promise.all(repos.map(async repo => {
-         await execShellCommand(`git clone -b local-service ${repo.url}`, {cwd: "./output"});
+         await execShellCommand(`git clone ${repo.url}`, {cwd: "./output"});
+         await execShellCommand(`git checkout -b local-service`, {cwd: "./output"});
+         await execShellCommand(`git merge master`, {cwd: "./output"});
          await execShellCommand(`cp build-image.sh ../output/${repo.name}`, {cwd: "./src"});
+         if (["wi-angular", "wi-python-frontend", "base-map"].includes(repo.name)) {
+            if (repo.name === "base-map") {
+               await execShellCommand(`npm i`, {cwd: `./output/${repo.name}`});
+               await execShellCommand(`bower install`, {cwd: `./output/${repo.name}`});
+               await execShellCommand(`bower update`, {cwd: `./output/${repo.name}`});
+               await execShellCommand(`npm run local`, {cwd: `./output/${repo.name}`});
+            }
+         }
          await execShellCommand(`rsync --delete --cvs-exclude -azvv ./${repo.name} --rsync-path="rsync" kubectl:/tmp/i2g-local/`, {cwd: "./output"});
          await execShellCommand(`ssh kubectl "cd /tmp/i2g-local/${repo.name} && /bin/bash build-image.sh ${REGISTRY_URL}/${repo.name}:local"`, {cwd: `./output/${repo.name}`});
          await execShellCommand(`rm -fr ${repo.name}`, {cwd: `./output`});
