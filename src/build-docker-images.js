@@ -21,6 +21,8 @@ function execShellCommand(cmd, options) {
 
 const run = async () => {
    try {
+      await execShellCommand(`rm -fr output`);
+      await execShellCommand(`ssh kubectl "rm -fr /tmp/i2g-local/*"`);
       await execShellCommand(`mkdir output`);
       await Promise.all(repos.map(async repo => {
          await execShellCommand(`git clone -b local-service ${repo.url}`, {cwd: "./output"});
