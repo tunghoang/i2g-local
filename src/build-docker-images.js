@@ -37,7 +37,7 @@ const run = async () => {
                await execShellCommand(`npm run local`, {cwd: `./output/${repo.name}`});
             }
          }
-         await execShellCommand(`rsync --delete --cvs-exclude -azvv ./${repo.name} --rsync-path="rsync" kubectl:/tmp/i2g-local/`, {cwd: "./output"});
+         await execShellCommand(`rsync --delete -azvv ./${repo.name} --rsync-path="rsync" kubectl:/tmp/i2g-local/`, {cwd: "./output"});
          await execShellCommand(`ssh kubectl "cd /tmp/i2g-local/${repo.name} && /bin/bash build-image.sh ${REGISTRY_URL}/${repo.name}:local"`, {cwd: `./output/${repo.name}`});
          // await execShellCommand(`rm -fr ${repo.name}`, {cwd: `./output`});
       }));
