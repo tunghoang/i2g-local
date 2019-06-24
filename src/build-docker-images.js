@@ -43,6 +43,7 @@ const run = async () => {
                         await execShellCommand(`git checkout -b local-service`, {cwd: `./output/${repo.name}`});
                         await execShellCommand(`git pull origin local-service`, {cwd: `./output/${repo.name}`});
                         await execShellCommand(`git merge master-r2`, {cwd: `./output/${repo.name}`});
+                        await execShellCommand(`cp build-image.sh ../output/${repo.name}`, {cwd: "./src"});
                         await execShellCommand(`npm i`, {cwd: `./output/${repo.name}`});
                         await execShellCommand(`bower install`, {cwd: `./output/${repo.name}`});
                         await execShellCommand(`bower update`, {cwd: `./output/${repo.name}`});
