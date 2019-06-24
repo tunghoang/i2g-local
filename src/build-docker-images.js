@@ -50,7 +50,7 @@ const run = async () => {
                         await execShellCommand(`bower update`, {cwd: `./output/${repo.name}`});
                         await execShellCommand(`gulp clean`, {cwd: `./output/${repo.name}`});
                         await execShellCommand(`gulp pre`, {cwd: `./output/${repo.name}`});
-                        await execShellCommand(`NODE_ENV=local gulp build`, {cwd: `./output/${repo.name}`});
+                        await execShellCommand(`export NODE_ENV=local && gulp build`, {cwd: `./output/${repo.name}`});
                     }
                 } else {
                     await execShellCommand(`git clone ${repo.url}`, {cwd: "./output"});

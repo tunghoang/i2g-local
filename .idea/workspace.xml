@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e47142ac-5d9f-43d9-a8ef-ce0fa60f1039" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/build-docker-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/build-docker-images.js" afterDir="false" />
-    </list>
+    <list default="true" id="e47142ac-5d9f-43d9-a8ef-ce0fa60f1039" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/build-docker-images.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="616">
+              <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -142,16 +140,15 @@
       <workItem from="1561026976140" duration="1405000" />
       <workItem from="1561089776645" duration="2463000" />
       <workItem from="1561189687250" duration="4450000" />
-      <workItem from="1561351958731" duration="7687000" />
+      <workItem from="1561351958731" duration="8115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76217000" />
+    <option name="totallyTimeSpent" value="76645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24934107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -245,8 +242,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/build-docker-images.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="616">
+          <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
         </state>
       </provider>
     </entry>
