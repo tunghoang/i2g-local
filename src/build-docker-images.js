@@ -27,9 +27,9 @@ const run = async () => {
         await Promise.all(repos.map(async repo => {
             if (repo.name === "wi-proxy") {
                 await execShellCommand(`git clone ${repo.url}`, {cwd: "./output"});
-                await execShellCommand(`git checkout local-service`, {cwd: "./output"});
-                await execShellCommand(`git pull`, {cwd: "./output"});
-                await execShellCommand(`git merge master`, {cwd: "./output"});
+                await execShellCommand(`git checkout local-service`, {cwd: `./output/${repo.name}`});
+                await execShellCommand(`git pull origin local-service`, {cwd: `./output/${repo.name}`});
+                await execShellCommand(`git merge master`, {cwd: `./output/${repo.name}`});
                 await execShellCommand(`cp build-image.sh ../output/${repo.name}`, {cwd: "./src"});
                 if (["wi-angular", "wi-python-frontend", "base-map"].includes(repo.name)) {
                     if (repo.name === "base-map") {
