@@ -40,6 +40,7 @@ const run = async () => {
                     }
                     if (repo.name === "wi-angular") {
                         await execShellCommand(`git clone ${repo.url}`, {cwd: "./output"});
+                        await execShellCommand(`git checkout master-r2`, {cwd: `./output/${repo.name}`});
                         await execShellCommand(`git checkout -b local-service`, {cwd: `./output/${repo.name}`});
                         await execShellCommand(`git pull origin local-service`, {cwd: `./output/${repo.name}`});
                         await execShellCommand(`git merge master-r2`, {cwd: `./output/${repo.name}`});
